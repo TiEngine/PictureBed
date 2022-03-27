@@ -1,0 +1,1298 @@
+<mxfile host="65bd71144e">
+    <diagram id="6oIg43fLmLG7iligPDfT" name="RenderPass">
+        <mxGraphModel dx="1374" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="398" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="375" target="396" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="1290" y="1067.8085106382978" as="targetPoint"/>
+                        <mxPoint x="1870" y="900" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="351" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" source="22" target="70" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="790" y="950" as="sourcePoint"/>
+                        <mxPoint x="790" y="1010" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="160" y="940"/>
+                            <mxPoint x="440" y="940"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="243" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="241" target="236" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="1260" y="1057.4878048780488" as="targetPoint"/>
+                        <mxPoint x="1305" y="1090" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="[09] Hair Collision CS Pass&#10;Dispatch each hair models (vertexs),&#10;and multiply with each hair-attached models" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="1000" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="File: TressFXSDFCollision.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="70" vertex="1">
+                    <mxGeometry y="50" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="70" vertex="1">
+                    <mxGeometry y="76" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="Entry: CollideHairVerticesWithSdf_forward" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="70" vertex="1">
+                    <mxGeometry y="84" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="230" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;exitX=0.75;exitY=1.003;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="216" target="70" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1071.4814814814813" y="970" as="sourcePoint"/>
+                        <mxPoint x="910" y="1024.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="220" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="212" target="65" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1100" y="960" as="sourcePoint"/>
+                        <mxPoint x="1000" y="950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="[07] Hair Physics(5) CS Pass&#10;Dispatch each hair models (vertexs)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="680" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="File: TressFXSimulation.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="60" vertex="1">
+                    <mxGeometry y="40" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="60" vertex="1">
+                    <mxGeometry y="66" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="Entry: LengthConstriantsWindAndCollision" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="60" vertex="1">
+                    <mxGeometry y="74" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="202" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="188" target="55" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="890" y="433.4375" as="sourcePoint"/>
+                        <mxPoint x="1013.2558139534881" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="[06] Hair Physics(4) CS Pass&#10;Dispatch each hair models (strands)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="520" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="File: TressFXSimulation.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="55" vertex="1">
+                    <mxGeometry y="40" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="55" vertex="1">
+                    <mxGeometry y="66" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Entry: LocalShapeConstraints" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="55" vertex="1">
+                    <mxGeometry y="74" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="[10] Shadow Passes&#10;DrawIndexed each hair-attached models and others scene models&#10;DrawIndexed each hair models &lt;positions&amp;tangents input from CS&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fillColor=#FFCCE6;gradientDirection=east;gradientColor=#F0C0E0;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="40" width="360" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="Pass for Hair - File: TressFXShadow.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="74" vertex="1">
+                    <mxGeometry y="50" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="74" vertex="1">
+                    <mxGeometry y="76" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="Pass for Hair - VS/PS Entry: HairShadowVS/HairShadowPS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="74" vertex="1">
+                    <mxGeometry y="84" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;span&gt;[11] Standard Forward PBR (glTF) Pass&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;&lt;span&gt;DrawIndexed each hair-attached models and others scene models&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;align=center;fillColor=#F0C0E0;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="180" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="[12.ShortCut1] Hair Depth Pass&#10;DrawIndexed each hair models &lt;positions&amp;tangents input from CS&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFCCE6;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="280" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="File: TressFXShortCut.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="83" vertex="1">
+                    <mxGeometry y="40" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="83" vertex="1">
+                    <mxGeometry y="66" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="VS/PS Entry: RenderHairDepthAlphaVS/DepthsAlphaPS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="83" vertex="1">
+                    <mxGeometry y="74" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="Depth State: Test(√) Write(×); Blend State:&#10;ColorSrc | ColorDst | Op || AlphaSrc | AlphaDst | Op || WriteMask&#10;    Zero   | SrcColor | Add ||    Zero    | SrcAlpha | Add ||  RGBA" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="83" vertex="1">
+                    <mxGeometry y="100" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="[13.ShortCut2] Hair Depth Blend Pass&#10;Fullscreen process" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFCCE6;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="480" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="File: TressFXShortCut.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="90" vertex="1">
+                    <mxGeometry y="40" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="90" vertex="1">
+                    <mxGeometry y="66" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="VS/PS Entry: FullScreenVS/ResolveDepthPS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="90" vertex="1">
+                    <mxGeometry y="74" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="Depth State: Test(√) Write(√); Blend State:&#10;ColorSrc | ColorDst | Op || AlphaSrc | AlphaDst | Op || WriteMask&#10;    One    |    Zero    | Add ||    Zero    |     One     | Add || Blend?(×)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="90" vertex="1">
+                    <mxGeometry y="100" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="[14.ShortCut3] Hair Color Pass&#10;DrawIndexed each hair models &lt;positions&amp;tangents input from CS&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFCCE6;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="680" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="File: TressFXShortCut.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="97" vertex="1">
+                    <mxGeometry y="40" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="97" vertex="1">
+                    <mxGeometry y="66" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="VS/PS Entry: RenderHairColorVS/HairColorPS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="97" vertex="1">
+                    <mxGeometry y="74" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="Depth State: Test(√) Write(×); Blend State:&#10;ColorSrc | ColorDst | Op || AlphaSrc | AlphaDst | Op || WriteMask&#10;    One    |     One    | Add ||    One    |     One     | Add ||  RGBA" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="97" vertex="1">
+                    <mxGeometry y="100" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="[15.ShortCut4] Hair Color Blend Pass&#10;Fullscreen process" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFCCE6;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="880" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="File: TressFXShortCut.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="103" vertex="1">
+                    <mxGeometry y="40" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="103" vertex="1">
+                    <mxGeometry y="66" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="VS/PS Entry: FullScreenVS/ResolveHairPS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="103" vertex="1">
+                    <mxGeometry y="74" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="Depth State: Test(×) Write(×); Blend State:&#10;ColorSrc | ColorDst | Op || AlphaSrc | AlphaDst | Op || WriteMask&#10;    One    | SrcAlpha | Add ||    Zero   |    Zero     | Add ||  RGBA" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="103" vertex="1">
+                    <mxGeometry y="100" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="&lt;span&gt;[ShortCut:16|PPLL:14] ToneMapping Pass: Fullscreen pass&lt;/span&gt;&lt;br style=&quot;padding: 0px ; margin: 0px&quot;&gt;[ShortCut:17|PPLL:15] ImGUI Pass" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;align=center;fillColor=#F0C0E0;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="1080" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="[04] Hair Physics(2) CS Pass&#10;Dispatch each hair models (strands)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="200" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="File: TressFXSimulation.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="34" vertex="1">
+                    <mxGeometry y="40" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="34" vertex="1">
+                    <mxGeometry y="66" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Entry: CalculateStrandLevelData" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="34" vertex="1">
+                    <mxGeometry y="74" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="[03] Hair Physics(1) CS Pass&#10;Dispatch each hair models (vertexs)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="40" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="File: TressFXSimulation.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="30" vertex="1">
+                    <mxGeometry y="40" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="30" vertex="1">
+                    <mxGeometry y="66" width="280" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Entry: IntegrationAndGlobalShapeConstraints" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="30" vertex="1">
+                    <mxGeometry y="74" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="[05] Hair Physics(3) CS Pass&#10;Dispatch each hair models (vertexs)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="360" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="File: TressFXSimulation.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="50" vertex="1">
+                    <mxGeometry y="40" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="50" vertex="1">
+                    <mxGeometry y="66" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Entry: VelocityShockPropagation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="50" vertex="1">
+                    <mxGeometry y="74" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="[08] Hair Physics(6) CS Pass&#10;Dispatch each hair models (vertexs)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="840" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="File: TressFXSimulation.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="65" vertex="1">
+                    <mxGeometry y="40" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="65" vertex="1">
+                    <mxGeometry y="66" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="Entry: UpdateFollowHairVertices" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="65" vertex="1">
+                    <mxGeometry y="74" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="[01] BoneSkin CS Pass&#10;Dispatch each hair-attached models' bones" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="560" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="File: TressFXBoneSkinning.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="16" vertex="1">
+                    <mxGeometry y="40" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="16" vertex="1">
+                    <mxGeometry y="66" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Entry: BoneSkinning" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="16" vertex="1">
+                    <mxGeometry y="74" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="[02] SDF CS Passes&#10;Dispatch each hair-attached models (vertexs)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;fillColor=#E6FFCC;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="760" width="240" height="152" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="File: TressFXSDFCollision.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="22" vertex="1">
+                    <mxGeometry y="40" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="22" vertex="1">
+                    <mxGeometry y="66" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Pass1Entry: InitializeSignedDistanceField" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="22" vertex="1">
+                    <mxGeometry y="74" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Pass2Entry: ConstructSignedDistanceField" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="22" vertex="1">
+                    <mxGeometry y="100" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Pass3Entry: FinalizeSignedDistanceField" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="22" vertex="1">
+                    <mxGeometry y="126" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="164" target="34" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1088.8832487309644" y="76" as="sourcePoint"/>
+                        <mxPoint x="871.2182741116751" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="177" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="163" target="34" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="997.5675675675673" y="76" as="sourcePoint"/>
+                        <mxPoint x="930" y="83.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;" parent="1" source="30" target="34" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="850" y="126" as="sourcePoint"/>
+                        <mxPoint x="890" y="126" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="" style="endArrow=classic;html=1;" parent="1" source="34" target="50" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="930" y="300" as="sourcePoint"/>
+                        <mxPoint x="970" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="" style="endArrow=classic;html=1;" parent="1" source="50" target="55" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="790" y="310" as="sourcePoint"/>
+                        <mxPoint x="790" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="64" value="" style="endArrow=classic;html=1;" parent="1" source="55" target="60" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="620" as="sourcePoint"/>
+                        <mxPoint x="790" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="" style="endArrow=classic;html=1;" parent="1" source="60" target="65" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="790" y="630" as="sourcePoint"/>
+                        <mxPoint x="790" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="" style="endArrow=classic;html=1;" parent="1" source="74" target="78" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1030" y="150" as="sourcePoint"/>
+                        <mxPoint x="1030" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="" style="endArrow=classic;html=1;" parent="1" source="78" target="83" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1630.2037037037035" y="160" as="sourcePoint"/>
+                        <mxPoint x="1630.3888888888887" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="" style="endArrow=classic;html=1;" parent="1" source="83" target="90" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1629.5882352941176" y="270" as="sourcePoint"/>
+                        <mxPoint x="1629.7647058823532" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" value="" style="endArrow=classic;html=1;" parent="1" source="90" target="97" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1619.5882352941176" y="660" as="sourcePoint"/>
+                        <mxPoint x="1630.3888888888887" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="108" value="" style="endArrow=classic;html=1;" parent="1" source="97" target="103" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1629.5882352941176" y="690" as="sourcePoint"/>
+                        <mxPoint x="1629.7647058823532" y="750" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" source="103" target="109" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1630" y="250" as="sourcePoint"/>
+                        <mxPoint x="1630" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="128" value="&lt;01&gt; hair-attached model initial vertex position (T-Pose)" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="560" width="320" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="&lt;02&gt; hair-attached model bone indices and weights" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="600" width="320" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="128" target="16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="750" as="sourcePoint"/>
+                        <mxPoint x="400" y="700" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="133" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="131" target="16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="364.5945945945946" y="596" as="sourcePoint"/>
+                        <mxPoint x="290" y="605.2" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="134" value="&lt;03&gt; hair-attached model collide mesh vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="720" width="300" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="16" target="134" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="364.5945945945946" y="596" as="sourcePoint"/>
+                        <mxPoint x="290" y="605.2" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="136" value="&lt;04&gt; hair-attached model collide mesh indices" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="800" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="134" target="22" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="290" y="653.2" as="sourcePoint"/>
+                        <mxPoint x="423.0120481927711" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="138" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="136" target="22" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="442.72727272727275" y="716" as="sourcePoint"/>
+                        <mxPoint x="290" y="788.8" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="139" value="&lt;05&gt; hair-attached model signed distance field" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="880" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="22" target="139" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="833.7333333333333" as="sourcePoint"/>
+                        <mxPoint x="290" y="836.8" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="142" value="gravitational force&lt;br&gt;global shape constraints" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="80" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="142" target="30" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="940" y="89.99838709677415" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="147" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="140" as="sourcePoint"/>
+                        <mxPoint x="780" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="148" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="300" as="sourcePoint"/>
+                        <mxPoint x="780" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="149" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="460" as="sourcePoint"/>
+                        <mxPoint x="780" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="151" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="140" as="sourcePoint"/>
+                        <mxPoint x="780" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="152" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="300" as="sourcePoint"/>
+                        <mxPoint x="780" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="153" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="460" as="sourcePoint"/>
+                        <mxPoint x="780" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="154" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="620" as="sourcePoint"/>
+                        <mxPoint x="780" y="680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="155" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="780" y="780" as="sourcePoint"/>
+                        <mxPoint x="780" y="840" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="156" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1620" y="150" as="sourcePoint"/>
+                        <mxPoint x="1620" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="157" value="" style="endArrow=classic;html=1;strokeColor=#999999;labelBorderColor=none;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1620" y="240" as="sourcePoint"/>
+                        <mxPoint x="1620" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="158" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1620" y="440" as="sourcePoint"/>
+                        <mxPoint x="1620" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="159" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1620" y="640" as="sourcePoint"/>
+                        <mxPoint x="1620" y="680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="160" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1620" y="840" as="sourcePoint"/>
+                        <mxPoint x="1620" y="880" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="162" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" source="16" target="22" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="790" y="630" as="sourcePoint"/>
+                        <mxPoint x="790" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="163" value="&lt;06&gt; hair model initial vertex position" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="40" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" value="hair model each strand bone indices and weights&#10;(the vertices in this strand will use the same bone indices and weights.)    &lt;07&gt;" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="80" width="280" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="165" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="163" target="30" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1034.5945945945946" y="190.8" as="sourcePoint"/>
+                        <mxPoint x="960" y="200.00000000000006" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="166" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="164" target="30" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="997.5675675675673" y="76" as="sourcePoint"/>
+                        <mxPoint x="930" y="83.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="170" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="30" target="173" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="970" y="108.4375" as="sourcePoint"/>
+                        <mxPoint x="930" y="106.5625" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="173" value="" style="swimlane;startSize=0;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;strokeWidth=1;align=left;swimlaneFillColor=#FFE6CC;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="200" width="280" height="140" as="geometry">
+                        <mxRectangle x="950" y="150" width="50" height="40" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="167" value="&lt;08{1}&gt; hair model current vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="173" vertex="1">
+                    <mxGeometry x="10" y="20" width="260" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" value="&lt;09{1}&gt; hair model previous vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="173" vertex="1">
+                    <mxGeometry x="10" y="60" width="260" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" value="&lt;10&gt; hair model prev.previous vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="173" vertex="1">
+                    <mxGeometry x="10" y="100" width="260" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;exitX=0.001;exitY=0.154;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="173" target="34" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1098.8832487309644" y="86" as="sourcePoint"/>
+                        <mxPoint x="881.2182741116751" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="180" value="&lt;11&gt; hair model each strand transform data" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="320" width="260" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="34" target="180" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="970" y="243.125" as="sourcePoint"/>
+                        <mxPoint x="890" y="250.625" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="velocity shock propagation(VSP) 速度震动传播：&lt;br&gt;在角色移动、旋转、加速、减速的时候，strand需要实现相应的跟随运动策略。&lt;br&gt;每根strand根部的两个顶点默认不可与角色相对移动，可用来计算当前strand的整体变换(transform)。&lt;br&gt;加速度可以通过前两帧顶点位置和当前顶点位置共同计算得到。" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="160" width="320" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="182" target="34" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="640" y="175.38461538461536" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="184" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="180" target="50" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="690" y="289.6428571428571" as="sourcePoint"/>
+                        <mxPoint x="553.8554216867469" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="185" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="167" target="50" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="557.2727272727273" y="356" as="sourcePoint"/>
+                        <mxPoint x="690" y="392.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="186" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="168" target="50" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="980" y="243" as="sourcePoint"/>
+                        <mxPoint x="890" y="395" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="187" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="182" target="180" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="690" y="250" as="targetPoint"/>
+                        <mxPoint x="650" y="246" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="188" value="&lt;08{2}&gt; hair model current vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="400" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="&lt;09{2}&gt; hair model previous vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="440" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;jumpStyle=none;" parent="1" source="50" target="188" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="573.8961038961038" y="356" as="sourcePoint"/>
+                        <mxPoint x="690" y="390.3846153846155" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="191" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="50" target="189" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="890" y="420.9375" as="sourcePoint"/>
+                        <mxPoint x="970" y="421.6875" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="198" value="&lt;06&gt; hair model initial vertex position" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="480" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="200" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="198" target="55" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="573.8961038961038" y="356" as="sourcePoint"/>
+                        <mxPoint x="690" y="390.38461538461524" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="201" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="180" target="55" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="582.2077922077922" y="516" as="sourcePoint"/>
+                        <mxPoint x="690" y="549.2" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="204" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="55" target="203" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="582.2077922077922" y="516" as="sourcePoint"/>
+                        <mxPoint x="690" y="549.2" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="206" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="207" target="60" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1036" y="670" as="sourcePoint"/>
+                        <mxPoint x="970" y="581.6875" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="208" value="每根发丝的每一段，即：&lt;br&gt;每两两顶点就构成一“段”。&lt;br&gt;因此，有多少个顶点就有多少段。" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="670" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="209" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="203" target="60" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1055.974025974026" y="676" as="sourcePoint"/>
+                        <mxPoint x="910" y="711.125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="207" value="&lt;12&gt; hair model each strand each segment length" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="640" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="210" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="189" target="60" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1083.503184713376" y="596" as="sourcePoint"/>
+                        <mxPoint x="891.9108280254777" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="203" value="&lt;08{3}&gt; hair model current vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="550" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="211" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="207" target="208" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="690" y="250" as="targetPoint"/>
+                        <mxPoint x="650" y="246" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="212" value="&lt;08{4}&gt; hair model current vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="734" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="213" value="&lt;13{1}&gt; hair model current vertex tangents" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="814" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="214" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="60" target="212" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1055.974025974026" y="676" as="sourcePoint"/>
+                        <mxPoint x="910" y="711.125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="215" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="60" target="213" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="910" y="744.875" as="sourcePoint"/>
+                        <mxPoint x="970" y="747.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="216" value="&lt;09{3}&gt; hair model previous vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="774" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="217" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="60" target="216" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="910" y="776.375" as="sourcePoint"/>
+                        <mxPoint x="1067.1134020618556" y="824" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="218" value="图例" style="swimlane;fontStyle=0;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="240" height="480" as="geometry">
+                        <mxRectangle x="40" y="40" width="60" height="23" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="244" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=none;gradientDirection=east;fillColor=#E6FFCC;gradientColor=#F0C0E0;swimlaneFillColor=#ffffff;" parent="218" vertex="1">
+                    <mxGeometry x="20" y="40" width="90" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="245" value="HLSL File" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;" parent="244" vertex="1">
+                    <mxGeometry y="20" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="246" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="244" vertex="1">
+                    <mxGeometry y="40" width="90" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="247" value="Shader Entry" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;" parent="244" vertex="1">
+                    <mxGeometry y="48" width="90" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="248" value="Pass流图" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="60" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="249" value="" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="218" vertex="1">
+                    <mxGeometry x="20" y="120" width="90" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="250" value="CPU输入资源" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="120" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="251" value="" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="218" vertex="1">
+                    <mxGeometry x="20" y="160" width="90" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="252" value="GPU输出/输入资源" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="160" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="253" value="" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="218" vertex="1">
+                    <mxGeometry x="20" y="200" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="254" value="注释文本" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="200" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="255" value="" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="20" y="240" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="256" value="注释文本" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="240" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="218" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="20" y="290" as="sourcePoint"/>
+                        <mxPoint x="110" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="258" value="Pass顺序流方向" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="280" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="218" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="20" y="320" as="sourcePoint"/>
+                        <mxPoint x="110" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="260" value="资源输入输出方向" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="310" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="261" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="218" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="110" y="350" as="targetPoint"/>
+                        <mxPoint x="20" y="350" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="262" value="注释关系线" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="340" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="263" value="[XX]" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="20" y="370" width="90" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="264" value="Pass序号" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="120" y="370" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="265" value="&amp;lt;XX{X}*&amp;gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="218" vertex="1">
+                    <mxGeometry x="5" y="405" width="60" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="266" value="资源序号，同序号为同一资源，花括号内数字为修改版本号。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;fontSize=12;" parent="218" vertex="1">
+                    <mxGeometry x="60" y="400" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="274" value="(*)影响vertex position/tangents，详细说明见图中相关处注释。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;fontSize=12;" parent="218" vertex="1">
+                    <mxGeometry x="50" y="430" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="221" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="213" target="65" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1080.909090909091" y="770" as="sourcePoint"/>
+                        <mxPoint x="890" y="855.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="222" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="219" target="65" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1043.968253968254" y="850" as="sourcePoint"/>
+                        <mxPoint x="890" y="880.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="219" value="&lt;14&gt; follow hair root vertex position offset" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="860" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="225" value="&lt;13{2}*&gt; hair model current vertex tangents" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="934" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="226" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="65" target="223" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="970" y="887.0625" as="sourcePoint"/>
+                        <mxPoint x="890" y="892.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="227" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="65" target="225" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="890" y="907.1875" as="sourcePoint"/>
+                        <mxPoint x="970" y="912.9375" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="223" value="&lt;08{5}*&gt; hair model current vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="900" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" value="无&amp;lt;..*&amp;gt;号：guide hair&lt;br&gt;有&amp;lt;..*&amp;gt;号：guide hair + follow hair" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="970" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="229" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="225" target="70" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1080" y="1010" as="sourcePoint"/>
+                        <mxPoint x="980" y="1030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="231" value="&lt;09{4}(*)&gt; hair model previous vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="1054" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="232" value="&lt;08{6}*&gt; hair model current vertex position" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="1014" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="233" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="139" target="70" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="290" y="868.8" as="sourcePoint"/>
+                        <mxPoint x="401.5789473684208" y="890" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="236" value="下一帧更新使用" style="shape=note;size=10;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1040" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="237" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="232" target="236" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="650" y="105.38461538461536" as="targetPoint"/>
+                        <mxPoint x="610" y="106.9230769230769" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="238" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="231" target="236" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="1270" y="1084.3333333333333" as="targetPoint"/>
+                        <mxPoint x="1207.5000000000005" y="1076" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="239" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="70" target="232" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="495.679012345679" y="916" as="sourcePoint"/>
+                        <mxPoint x="681.3580246913582" y="1010" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="240" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="70" target="231" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="910" y="1064.25" as="sourcePoint"/>
+                        <mxPoint x="970" y="1063.875" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="241" value="&lt;span&gt;previous vertex position在第[03]个Pass处由上一帧的vertex position更新而来，而上一帧的vertex position在当前[09]个Pass处是存有guide hair + follow hair的。因此，在当前[09]个Pass处时的&lt;/span&gt;&lt;span&gt;previous vertex position是存有&lt;/span&gt;guide hair + follow hair的。" style="shape=note;size=10;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="1090" width="460" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="242" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="231" target="241" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="1260" y="1057.4878048780488" as="targetPoint"/>
+                        <mxPoint x="1205.1785714285716" y="1050" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="270" value="快速非稳定SDF碰撞计算：&lt;br&gt;&lt;span&gt;CollideHairVerticesWithSdf&lt;br&gt;&lt;/span&gt;默认走的带_forward的Entry" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="1030" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="271" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;" parent="1" source="270" target="70" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="1315" y="1080" as="targetPoint"/>
+                        <mxPoint x="1315.02" y="1100" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="273" value="统计信息 (RenderPass)" style="swimlane;fontSize=12;align=center;fillColor=#FFFFFF;fontStyle=0;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="960" width="240" height="160" as="geometry">
+                        <mxRectangle x="40" y="960" width="80" height="23" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="272" value="毛发物理模拟：At least 11 Passes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
+                    <mxGeometry x="10" y="40" width="220" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="275" value="毛发ShortCut渲染：At least 4 Passes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
+                    <mxGeometry x="10" y="70" width="220" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="276" value="毛发PPLL渲染：At least 2 Passes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
+                    <mxGeometry x="10" y="100" width="220" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="277" value="其他渲染：Hair Shadow Pass" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
+                    <mxGeometry x="10" y="130" width="220" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="280" value="[12.PPLL1] Hair(Depth+Color) Pass&#10;DrawIndexed each hair models &lt;positions&amp;tangents input from CS&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFCCE6;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="2080" y="280" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="281" value="File: TressFXPPLL.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="280" vertex="1">
+                    <mxGeometry y="40" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="282" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="280" vertex="1">
+                    <mxGeometry y="66" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="283" value="VS/PS Entry: RenderHairVS/PPLLFillPS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="280" vertex="1">
+                    <mxGeometry y="74" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="284" value="Depth State: Test(√) Write(×); Blend State:&#10;ColorSrc | ColorDst | Op || AlphaSrc | AlphaDst | Op || WriteMask&#10;    Zero   |     Zero    | Add ||    Zero    |    One     | Add || Blend?(×)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="280" vertex="1">
+                    <mxGeometry y="100" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="290" value="[13.PPLL2] Hair(Depth+Color) Blend Pass&#10;DrawIndexed each hair models &lt;positions&amp;tangents input from CS&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFCCE6;swimlaneFillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="2080" y="680" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="291" value="File: TressFXPPLL.hlsl" style="text;strokeColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="290" vertex="1">
+                    <mxGeometry y="40" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="292" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="290" vertex="1">
+                    <mxGeometry y="66" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="293" value="VS/PS Entry:FullScreenVS/PPLLResolvePS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="290" vertex="1">
+                    <mxGeometry y="74" width="360" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="294" value="Depth State: Test(×) Write(×); Blend State:&#10;ColorSrc | ColorDst | Op || AlphaSrc | AlphaDst | Op || WriteMask&#10;     One   | SrcAlpha | Add ||    Zero    |    Zero    | Add ||  RGBA" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="290" vertex="1">
+                    <mxGeometry y="100" width="360" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="295" value="" style="endArrow=classic;html=1;strokeColor=#999999;dashed=1;" parent="1" source="78" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1590" y="250" as="sourcePoint"/>
+                        <mxPoint x="1590" y="290" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1640" y="260"/>
+                            <mxPoint x="2260" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="297" value="" style="endArrow=classic;html=1;strokeColor=#999999;dashed=1;" parent="1" source="280" target="290" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1590" y="450" as="sourcePoint"/>
+                        <mxPoint x="1590" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="298" value="" style="endArrow=classic;html=1;strokeColor=#999999;dashed=1;" parent="1" source="290" target="109" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2270" y="450" as="sourcePoint"/>
+                        <mxPoint x="2270" y="690" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2260" y="1060"/>
+                            <mxPoint x="1640" y="1060"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="312" value="注意（其他地方针对这两个资源的输入同）：TressFX代码中该输入资源的名称为g_GuideHairVertexPositions和g_GuideHairVertexTangents，但是对比抓帧的资源Buffer序号，可以发现该资源中存的是guide hair + follow hair的，且在后续的渲染处理时没有跳过follow hair的过程，后面的渲染针对所有的hair都做处理了。" style="shape=note;size=10;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="2080" y="160" width="320" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-322" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="1820" y="40" width="620" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="317" value="" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;fillColor=#f5f5f5;" parent="yjJAleWWtRehKV4I96JZ-322" vertex="1">
+                    <mxGeometry width="620" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="315" value="&lt;13{2}*&gt; hair model vertex tangents" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="yjJAleWWtRehKV4I96JZ-322" vertex="1">
+                    <mxGeometry x="10" y="10" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="316" value="&lt;08{6}*&gt; hair model vertex positions" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="yjJAleWWtRehKV4I96JZ-322" vertex="1">
+                    <mxGeometry x="10" y="40" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-317" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;" parent="yjJAleWWtRehKV4I96JZ-322" vertex="1">
+                    <mxGeometry x="260" y="10" width="20" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-318" value="&amp;lt;13{2}*&amp;gt; &amp;amp; &amp;lt;08{6}*&amp;gt; &amp;amp; &amp;lt;15&amp;gt; 资源集合：&lt;br&gt;由发丝顶点和预先准备好的索引共同生成头发的三角形面片&lt;br&gt;1.由每根发丝(strand)预生成头发的三角形面片(triangles)&lt;br&gt;2.扩展每个三角形的宽度作为最终triangles以实现抗锯齿" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="yjJAleWWtRehKV4I96JZ-322" vertex="1">
+                    <mxGeometry x="290" y="10" width="320" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-319" value="&lt;15&gt; follow hair root vertex position offset" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="yjJAleWWtRehKV4I96JZ-322" vertex="1">
+                    <mxGeometry x="10" y="70" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-323" value="&lt;13{2}*&gt; &amp; &lt;08{6}*&gt; &amp; &lt;15&gt;" style="text;fillColor=#ffe6cc;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;gradientDirection=east;gradientColor=#FFF2CC;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="280" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-324" value="" style="curved=1;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;endFill=0;" parent="1" source="312" target="315" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1860" y="330" as="sourcePoint"/>
+                        <mxPoint x="1910" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2080" y="150"/>
+                            <mxPoint x="2090" y="67"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-325" value="" style="curved=1;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;endFill=0;" parent="1" source="312" target="316" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2119.090909090909" y="170" as="sourcePoint"/>
+                        <mxPoint x="2080" y="76.42857142857144" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2070" y="150"/>
+                            <mxPoint x="2080" y="90"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="319" value="&lt;18&gt; base albedo texture (2048x2048)" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="320" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="320" value="&lt;19&gt; hair strand texture coordination" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="360" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="321" value="&lt;20&gt; RWFragmentDepthsTexture (2D x3)" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="440" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="323" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="yjJAleWWtRehKV4I96JZ-323" target="83" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1907.5510204081634" y="190" as="sourcePoint"/>
+                        <mxPoint x="1809.591836734694" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="324" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="319" target="83" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1887.910447761194" y="316" as="sourcePoint"/>
+                        <mxPoint x="1810" y="332.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="325" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="320" target="83" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1830" y="353.125" as="sourcePoint"/>
+                        <mxPoint x="1810" y="354.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="327" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="83" target="321" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1810" y="399.8125" as="sourcePoint"/>
+                        <mxPoint x="1871.5094339622642" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="318" value="&lt;21&gt; ColorAttachment: Accum 1-Alpha" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="494" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="326" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="83" target="318" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1830" y="378.125" as="sourcePoint"/>
+                        <mxPoint x="1810" y="377.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="329" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="321" target="90" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1810" y="422.3125" as="sourcePoint"/>
+                        <mxPoint x="1905.2688172043008" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="330" value="&lt;16&gt; DepthAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="640" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="331" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;startArrow=classic;startFill=1;" parent="1" source="90" target="330" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271028" y="476" as="sourcePoint"/>
+                        <mxPoint x="1810" y="509.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="333" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="330" target="97" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271028" y="476" as="sourcePoint"/>
+                        <mxPoint x="1810" y="509.8124999999998" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="334" value="&lt;17&gt; ColorAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="1000" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="335" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;startArrow=classic;startFill=1;" parent="1" source="334" target="103" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1810" y="622.3125" as="sourcePoint"/>
+                        <mxPoint x="1905.2688172043008" y="650" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="337" value="&lt;23&gt; ColorAttachment: hair color" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="840" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="338" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="97" target="337" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271028" y="676" as="sourcePoint"/>
+                        <mxPoint x="1810" y="709.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="339" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="337" target="103" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1810" y="822.3125" as="sourcePoint"/>
+                        <mxPoint x="1905.2688172043008" y="850" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="341" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="318" target="103" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1450" y="444.8125" as="sourcePoint"/>
+                        <mxPoint x="1341.2781954887218" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1340" y="520"/>
+                            <mxPoint x="1340" y="880"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="342" value="&lt;16&gt; DepthAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="400" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="343" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="342" target="83" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1830" y="378.125" as="sourcePoint"/>
+                        <mxPoint x="1810" y="377.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="344" value="&lt;16&gt; DepthAttachment" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="180" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="346" value="&lt;17&gt; ColorAttachment" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="214" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="347" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="78" target="344" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1455.8503401360545" y="450" as="sourcePoint"/>
+                        <mxPoint x="1338.299319727891" y="504" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="348" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="78" target="346" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1450" y="208.66666666666674" as="sourcePoint"/>
+                        <mxPoint x="1430" y="207.4074074074074" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2dGycf1rSIpd41l3BJNn-348" value="&lt;19&gt; hair strand texture coordination" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="734" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="2dGycf1rSIpd41l3BJNn-349" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="2dGycf1rSIpd41l3BJNn-348" target="97" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271028" y="676" as="sourcePoint"/>
+                        <mxPoint x="1810" y="709.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2dGycf1rSIpd41l3BJNn-350" value="&lt;18&gt; base albedo texture (2048x2048)" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="694" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="2dGycf1rSIpd41l3BJNn-351" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="2dGycf1rSIpd41l3BJNn-350" target="97" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1830" y="759.375" as="sourcePoint"/>
+                        <mxPoint x="1810" y="760.4375" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2dGycf1rSIpd41l3BJNn-352" value="&lt;22&gt; strand albedo texture (16x16)" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="774" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="2dGycf1rSIpd41l3BJNn-353" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="2dGycf1rSIpd41l3BJNn-352" target="97" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1830" y="761.875" as="sourcePoint"/>
+                        <mxPoint x="1810" y="762.6875" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="349" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="367.56756756756727" y="586" as="sourcePoint"/>
+                        <mxPoint x="280" y="596.125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="350" value="" style="endArrow=classic;html=1;strokeColor=#999999;" parent="1" source="65" target="70" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="790" y="790" as="sourcePoint"/>
+                        <mxPoint x="790" y="850" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="353" value="* 此Pass图中的输入输出资源未列出constant/uniform buffer的资源数据；&lt;br&gt;* 逐Pass分析时会带上上述资源数据及相关数据的分析。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="1840" y="1080" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="355" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="yjJAleWWtRehKV4I96JZ-323" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1887.910447761194" y="316" as="sourcePoint"/>
+                        <mxPoint x="1810" y="332.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="356" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="319" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2012.089552238806" y="316" as="sourcePoint"/>
+                        <mxPoint x="2090" y="332.3125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="357" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="320" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2070" y="353.125" as="sourcePoint"/>
+                        <mxPoint x="2090" y="354.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="359" value="&lt;17&gt; ColorAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2000" y="560" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="360" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="358" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271028" y="476" as="sourcePoint"/>
+                        <mxPoint x="1810" y="509.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="361" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="359" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2143.684210526316" y="490" as="sourcePoint"/>
+                        <mxPoint x="2185.7894736842104" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="358" value="&lt;16&gt; DepthAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2000" y="520" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="362" value="Load-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="2160" y="450" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="364" value="Load-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="390" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="366" value="Load-&amp;gt;Write-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="610" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="367" value="Load-&amp;gt;Write-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="970" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="368" value="Load-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="670" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="369" value="&lt;22&gt; strand albedo texture (16x16)" style="text;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="2000" y="480" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="372" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="369" target="280" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271033" y="475.9999999999999" as="sourcePoint"/>
+                        <mxPoint x="1810" y="509.8125" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2129" y="470"/>
+                            <mxPoint x="2150" y="450"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="376" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="280" target="373" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1911.1214953271028" y="476" as="sourcePoint"/>
+                        <mxPoint x="1810" y="509.8125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="377" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="280" target="374" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2330.1503759398497" y="450" as="sourcePoint"/>
+                        <mxPoint x="2360.2255639097743" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="373" value="&lt;25&gt; LinkListCounter" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2280" y="480" width="160" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="374" value="&lt;26&gt; LinkListUAV" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2280" y="520" width="160" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="379" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="374" target="290" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2330.1503759398497" y="450" as="sourcePoint"/>
+                        <mxPoint x="2360.2255639097743" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="380" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="375" target="290" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2364.273127753304" y="556" as="sourcePoint"/>
+                        <mxPoint x="2305.2422907488985" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="375" value="&lt;27&gt; FragmentListHead" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2280" y="560" width="160" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="378" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="280" target="375" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2316.242774566474" y="450" as="sourcePoint"/>
+                        <mxPoint x="2362.485549132948" y="530" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2270" y="550"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="383" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="382" target="290" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2363.048128342246" y="596" as="sourcePoint"/>
+                        <mxPoint x="2312.780748663102" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="384" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;startArrow=classic;startFill=1;" parent="1" source="381" target="290" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2143.6842105263154" y="890" as="sourcePoint"/>
+                        <mxPoint x="2185.7894736842104" y="850" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="381" value="&lt;17&gt; ColorAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2000" y="960" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="382" value="&lt;16&gt; DepthAttachment from Pass[11]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="2000" y="880" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="385" value="Load-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="2080" y="850" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="386" value="Load-&amp;gt;Write-&amp;gt;Store" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#E0E0E0;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="2080" y="930" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="387" value="TressFX示例中此处深度没有写入，如果后续过程需要毛发的深度，需要写入！" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="2280" y="1020" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="390" value="&lt;24&gt; DepthAttachment(Shadow) from Pass[10]" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1960" y="600" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="391" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="390" target="290" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2363.048128342246" y="596" as="sourcePoint"/>
+                        <mxPoint x="2312.780748663102" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="393" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="390" target="97" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2124.1496598639455" y="636" as="sourcePoint"/>
+                        <mxPoint x="2182.925170068027" y="690" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2070" y="670"/>
+                            <mxPoint x="2070" y="820"/>
+                            <mxPoint x="1880" y="820"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="394" value="&lt;24&gt; DepthAttachment: ShadowTexture" style="text;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="200" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="395" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="74" target="394" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1450" y="208.66666666666674" as="sourcePoint"/>
+                        <mxPoint x="1430" y="207.4074074074074" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="310" value="" style="endArrow=classic;html=1;strokeColor=#66B2FF;" parent="1" source="yjJAleWWtRehKV4I96JZ-320" target="74" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1868.2758620689656" y="140" as="sourcePoint"/>
+                        <mxPoint x="1910" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="yjJAleWWtRehKV4I96JZ-320" value="&lt;13{2}*&gt; &amp; &lt;08{6}*&gt; &amp; &lt;15&gt;" style="text;fillColor=#ffe6cc;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeColor=#d79b00;gradientDirection=east;gradientColor=#FFF2CC;" parent="1" vertex="1">
+                    <mxGeometry x="1820" y="160" width="240" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="396" value="&lt;span&gt;FragmentListHead这张贴图类似于指针，存储了每一个像素在&lt;/span&gt;LinkListUAV的头索引&lt;span&gt;，索引到&lt;/span&gt;&lt;span&gt;LinkListUAV位置，&lt;/span&gt;LinkListUAV是一个存储了{depth,data,color,next}的数组&lt;span&gt;，&lt;/span&gt;&lt;span&gt;LinkListCounter存储了&lt;/span&gt;LinkListUAV已使用的个数(即size，非capacity)。" style="shape=note;size=15;align=left;spacingLeft=10;html=1;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=none;sketch=0;strokeWidth=1;strokeColor=#66B2FF;fillColor=#CCE5FF;" parent="1" vertex="1">
+                    <mxGeometry x="2280" y="860" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="399" value="" style="edgeStyle=none;endArrow=none;html=1;strokeColor=#66B2FF;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="382" target="387" edge="1">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="2370" y="870" as="targetPoint"/>
+                        <mxPoint x="2370" y="596" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
