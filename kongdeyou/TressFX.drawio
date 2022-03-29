@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="6oIg43fLmLG7iligPDfT" name="RenderPass">
-        <mxGraphModel dx="1374" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1118" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -831,7 +831,7 @@
                         <mxRectangle x="40" y="960" width="80" height="23" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="272" value="毛发物理模拟：At least 11 Passes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
+                <mxCell id="272" value="毛发物理模拟：At least 9 Passes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
                     <mxGeometry x="10" y="40" width="220" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="275" value="毛发ShortCut渲染：At least 4 Passes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="273" vertex="1">
